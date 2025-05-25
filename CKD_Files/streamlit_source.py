@@ -8,7 +8,7 @@ st.set_page_config(page_title="CKD Prediction", layout="centered", page_icon="ðŸ
 # Load the trained model
 @st.cache_resource
 def load_model():
-    return joblib.load("ckd.pkl")
+    return joblib.load("CKD_Files/ckd.pkl")
 
 model = load_model()
 
